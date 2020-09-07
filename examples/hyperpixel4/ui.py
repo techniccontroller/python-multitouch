@@ -14,7 +14,7 @@ screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
 
 pygame.mouse.set_visible(False)
 
-ts = Touchscreen(device="Goodix Capacitive TouchScreen")
+ts = Touchscreen(device="generic ft5x06 (11)")
 
 for touch in ts.touches:
     touch.on_press = touchscreen_event
